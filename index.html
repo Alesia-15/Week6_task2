@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-weight: bold;
+        text-align: center;
+      }
+      header {
+        grid-column: 1/5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: silver;
+      }
+      main {
+        grid-column: 1/4;
+        background-color: lemonchiffon;
+      }
+      article {
+        margin: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: moccasin;
+      }
+      .article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .article_3 {
+        grid-column: 1/3;
+      }
+      aside {
+        padding-top: 15px;
+        background-color: lightgreen;
+      }
+      footer {
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: silver;
+      }
+      section {
+        margin: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>[Шапка страницы]</div>
+    </header>
+    <main>
+      <p>[Основная часть]</p>
+      <div class="article">
+        <article>[Eщё 1]</article>
+        <article>[Eщё 2]</article>
+        <article class="article_3">[Eщё 3]</article>
+      </div>
+    </main>
+    <aside>[Боковая область]</aside>
+    <footer>
+      <section>[Секция футера 1]</section>
+      <section>[Секция футера 2]</section>
+      <section>[Секция футера 3]</section>
+      <section>[Секция футера 4]</section>
+    </footer>
+  </body>
+</html>
